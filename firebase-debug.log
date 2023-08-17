@@ -1,0 +1,19 @@
+[debug] [2023-08-17T14:37:07.547Z] ----------------------------------------------------------------------
+[debug] [2023-08-17T14:37:07.549Z] Command:       C:\Program Files\node.exe C:\Users\herme\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-17T14:37:07.549Z] CLI Version:   12.4.8
+[debug] [2023-08-17T14:37:07.550Z] Platform:      win32
+[debug] [2023-08-17T14:37:07.550Z] Node Version:  v18.4.0
+[debug] [2023-08-17T14:37:07.555Z] Time:          Thu Aug 17 2023 22:37:07 GMT+0800 (Singapore Standard Time)
+[debug] [2023-08-17T14:37:07.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-17T14:37:07.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-17T14:37:07.642Z] > authorizing via signed-in user (hermeskd35@gmail.com)
+[debug] [2023-08-17T14:37:07.642Z] [iam] checking project hermes-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-17T14:37:07.643Z] > refreshing access token with scopes: []
+[debug] [2023-08-17T14:37:07.645Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-17T14:37:07.645Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-17T14:37:07.856Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-08-17T14:37:07.857Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-17T14:37:07.871Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hermes-portfolio:testIamPermissions [none]
+[debug] [2023-08-17T14:37:07.871Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hermes-portfolio:testIamPermissions x-goog-quota-user=projects/hermes-portfolio
+[debug] [2023-08-17T14:37:07.871Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hermes-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
