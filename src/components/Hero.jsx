@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-[90vh] sm:h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-8xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
         <button
           onClick={handleDownload}
-          className="z-10 bg-tertiary mt-5 ml-5 py-3 px-8 outline-non w-fit text-black font-bold shadow-md shadow-primary rounded-xl cursor-pointer"
+          className="z-10 bg-tertiary mt-5 py-2 px-4 sm:py-3 sm:px-8 outline-non w-fit text-black text-sm sm:text-base font-bold shadow-md shadow-primary rounded-xl cursor-pointer"
         >
           Download CV
         </button>
