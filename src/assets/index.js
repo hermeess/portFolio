@@ -6,6 +6,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import linkIcon from "./link-solid.svg";
+import linkedinIcon from "./linkedin.svg";
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -59,4 +60,5 @@ export {
   eugene,
   arun,
   linkIcon,
+  linkedinIcon,
 };

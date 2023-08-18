@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { linkedinIcon } from "../assets";
 import { app } from "../firebase";
 import { getStorage, ref, getDownloadURL } from "firebase/storage"; // Import the specific storage functions
 
@@ -34,12 +35,28 @@ const Hero = () => {
             interfaces and web applications
           </p>
         </div>
-        <button
-          onClick={handleDownload}
-          className="z-10 bg-tertiary mt-5 py-2 px-4 sm:py-3 sm:px-8 outline-non w-fit text-black text-sm sm:text-base font-bold shadow-md shadow-primary rounded-xl cursor-pointer"
-        >
-          Download CV
-        </button>
+        <div className="flex flex-col justify-center items-start mt-5 gap-5">
+          <button
+            onClick={handleDownload}
+            className="z-10 bg-tertiary mt-5 py-2 px-4 sm:py-3 sm:px-8 outline-non w-fit text-black text-sm sm:text-base font-bold shadow-md shadow-primary rounded-xl cursor-pointer"
+          >
+            Download CV
+          </button>
+          <div className="inset-0 flex justify-end card-img_hover z-10">
+            <div
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/hermes-lim/", "_blank")
+              }
+              className="flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={linkedinIcon}
+                alt="linkedinIcon"
+                className="w-[40px] h-[40px] object-contain "
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <ComputersCanvas />
